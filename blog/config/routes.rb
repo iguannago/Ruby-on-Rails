@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :articles
+  get 'jobs/london'
   get 'about/me'
-
   get 'welcome/index'
+  resources :articles
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
